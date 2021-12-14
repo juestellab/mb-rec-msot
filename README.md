@@ -4,14 +4,14 @@ This is a toolbox to reconstruct initial pressure images in optoacoustic tomogra
 ## Environment setup
 * Install the Matlab R2019b or higher with the toolboxes 'Signal Processing', 'Image Processing' and 'Parallel Computing'.
 * Set up the Matlab instance for C/C++ Mex file compilation. For windows, it is sufficient to install MinGW. The Mex files in this toolbox require a x64_86 processor architecture and support OpenMP parallelization.
-* Download Field II, version 3.30 from http://field-ii.dk/?downloading_2021.html for your operating system and extract the files in 'libraries/Field_II_ver_3_30_<os>/', where '<os>' is either 'windows' or 'linux'.
+* Download Field II, version 3.30 from http://field-ii.dk/?downloading_2021.html for your operating system and extract the files in 'libraries/Field_II_ver_3_30_[os]/', where '[os]' is either 'windows' or 'linux'.
 * Download ShearLab 3D, version 1.1 for Matlab from http://shearlab.math.lmu.de/software and save the extracted folder in 'libraries/ShearLab3Dv11/'.
 * Download SpaRSA, version 2.0 from http://www.lx.it.pt/~mtf/SpaRSA and save the extracted folder in 'libraries/SpaRSA_2.0/'. Optional: Reduce the number of required model evaluations in 'SpaRSA.m' (and thus the reconstruction time of SpaRSA-based methods) by removing dispensable initializations and consistency checks at the beginning of the algorithm (lines 375, 383, 401, 427).
 
 ## Model-based reconstruction
 This toolbox offers the following non-negative reconstruction methods:
 * Non-negative reconstruction with L2 regularization (rec_nn_with_L2_reg.m)
-* Non-negative reconstruction with Shearlet L1 regularization(rec_nn_with_Shearlet_reg.m)
+* Non-negative reconstruction with Shearlet L1 regularization (rec_nn_with_Shearlet_reg.m)
 * Non-negative reconstruction with L1 regularization (rec_nn_with_L1_eye_reg.m)
 * Non-negative reconstruction with TV regularization (rec_nn_with_TV_reg.m)
 
