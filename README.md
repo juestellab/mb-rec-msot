@@ -1,5 +1,5 @@
 # MSOT Model-based Reconstruction Toolbox
-This is a toolbox to reconstruct initial pressure images in optoacoustic tomography, developed in the Group for Computation and Machine Learning, Institute for Biological and Medical Imaging, Helmholtz Zentrum München, and Chair of Biological Imaging, Technische Universität München.
+This is a toolbox to reconstruct initial pressure images in optoacoustic tomography, developed in the Jüstel Lab, Institute for Biological and Medical Imaging, Institute of Computational Biology, Helmholtz Zentrum München, and Chair of Biological Imaging, Technische Universität München.
 
 ## Environment setup
 * Install the Matlab R2019b or higher with the toolboxes 'Signal Processing', 'Image Processing' and 'Parallel Computing'.
